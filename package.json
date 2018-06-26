@@ -1,0 +1,31 @@
+{
+  "name": "zoid-lesson",
+  "version": "1.0.0",
+  "description": "A lesson on Zoid and its uses",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshgreenwell/zoid-lesson.git"
+  },
+  "keywords": [
+    "zoid",
+    "xcomponent",
+    "js",
+    "javascript",
+    "post-robot",
+    "post",
+    "messaging"
+  ],
+  "author": "Josh Greenwell <joshgreenwell99@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshgreenwell/zoid-lesson/issues"
+  },
+  "homepage": "https://github.com/joshgreenwell/zoid-lesson#readme",
+  "dependencies": {
+    "zoid": "^6.0.63"
+  }
+}
