@@ -4,6 +4,7 @@
   "description": "A lesson on Zoid and its uses",
   "main": "index.js",
   "scripts": {
+    "b:1": "webpack --mode development --env.CHALLENGE=challenge1  && serve ./src/challenge1 -p 3000",
     "test": "yarn test"
   },
   "repository": {
@@ -26,6 +27,10 @@
   },
   "homepage": "https://github.com/joshgreenwell/zoid-lesson#readme",
   "dependencies": {
+    "path": "^0.12.7",
+    "serve": "^9.1.0",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8",
     "zoid": "^6.0.63"
   }
 }
