@@ -7,7 +7,7 @@
     "b:1": "concurrently --kill-others \"webpack -w --mode development --env.TUTORIAL=tutorial1\" \"serve ./src/tutorial1 -p 3000\"",
     "b:2": "concurrently --kill-others \"webpack -w --mode development --env.TUTORIAL=tutorial2\" \"serve ./src/tutorial2 -p 3000\"",
     "b:3": "concurrently --kill-others \"webpack -w --mode development --env.TUTORIAL=tutorial3\" \"serve ./src/tutorial3 -p 3000\"",
-    "test": "yarn test"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -32,8 +32,12 @@
     "zoid": "^6.0.63"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.2.0",
     "concurrently": "^3.6.0",
+    "jest": "^23.2.0",
     "path": "^0.12.7",
+    "regenerator-runtime": "^0.12.0",
     "serve": "^9.1.0",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8"
