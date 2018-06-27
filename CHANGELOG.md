@@ -1,8 +1,10 @@
 ### June 26, 2018 -- Challenge 1
 
-- Finished challenge files for 1 and 2
+- Finished challenge files for 1, 2, and 3
 - Added webpack to build each challenge
 - Added scripts to build and serve challenges
+- Bug fixes
+- Challenge 4 description
 
 ### June 25, 2018 -- Inital Commits
 

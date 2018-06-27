@@ -6,6 +6,7 @@
   "scripts": {
     "b:1": "webpack --mode development --env.CHALLENGE=challenge1  && serve ./src/challenge1 -p 3000",
     "b:2": "webpack --mode development --env.CHALLENGE=challenge2  && serve ./src/challenge2 -p 3000",
+    "b:3": "webpack --mode development --env.CHALLENGE=challenge3  && serve ./src/challenge3 -p 3000",
     "test": "yarn test"
   },
   "repository": {
