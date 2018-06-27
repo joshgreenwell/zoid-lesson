@@ -1,4 +1,4 @@
-# tutorial 4: Using Multiple Components Together
+# Tutorial 4: Using Multiple Components Together
 
 Now that you have the basics, and some of the advanced, features<br/>
 of zoid, we will put your skills to the test in creating an end<br/>

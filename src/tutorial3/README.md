@@ -1,4 +1,4 @@
-# tutorial 3: Passing Props
+# Tutorial 3: Passing Props
 
 Building off tutorial 2, we will now look at how you can<br/>
 customize you component's props and how to pass data between<br/>

@@ -1,4 +1,4 @@
-# tutorial 2: Customizing the Create
+# Tutorial 2: Customizing the Create
 
 Building off tutorial 1, we will now look at how you can<br/>
 customize you component shape and style with the `create` call
