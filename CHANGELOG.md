@@ -2,6 +2,7 @@
 
 - Changed all naming of challenges to tutorial
 - Updated package.json with build watch and serve hosting
+- Added jest and babel
 
 
 ### June 26, 2018 -- Initial Challenges
