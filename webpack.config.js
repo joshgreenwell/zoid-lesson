@@ -1,15 +1,15 @@
 const path = require('path');
 
 module.exports = env => {
-  const challenge = env.CHALLENGE
+  const tutorial = env.TUTORIAL
 
   return ({
     entry: {
-      parent: `./src/${challenge}/components/parent.js`,
-      child: `./src/${challenge}/components/child.js`
+      parent: `./src/${tutorial}/components/parent.js`,
+      child: `./src/${tutorial}/components/child.js`
     },
     output: {
-      path: path.resolve(__dirname, `./src/${challenge}/dist`),
+      path: path.resolve(__dirname, `./src/${tutorial}/dist`),
       filename: '[name].js'
     }
   })

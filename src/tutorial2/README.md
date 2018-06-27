@@ -1,6 +1,6 @@
-# Challenge 2: Customizing the Create
+# tutorial 2: Customizing the Create
 
-Building off challenge 1, we will now look at how you can<br/>
+Building off tutorial 1, we will now look at how you can<br/>
 customize you component shape and style with the `create` call
 
 `Create` should only ever be called once per a page, per tag!<br/>
@@ -13,7 +13,7 @@ of times.
 First, let's look at the changing the size of the child on the<br/>
 parent page. To do this we can use the `dimensions` key.
 
-If you build the challenge now, `yarn run b:2`, you will see<br/>
+If you build the tutorial now, `yarn run b:2`, you will see<br/>
 visually we have an issue!
 
 This should be done in `parent.js`.
@@ -90,7 +90,7 @@ const helloWorld = zoid.create({
 
 ### Step 4:
 
-Finally, we will look forward to the next challenge and talk about<br/>
+Finally, we will look forward to the next tutorial and talk about<br/>
 `props`. In your create call, you can also add validation and<br/>
 documentation for the props that are required or optional. In zoid,<br/>
 props are like options.

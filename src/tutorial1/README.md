@@ -1,4 +1,4 @@
-# Challenge 1 : The Basics
+# tutorial 1 : The Basics
 
 Create a basic zoid component to connect a parent and child page
 

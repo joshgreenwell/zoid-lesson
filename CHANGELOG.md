@@ -1,4 +1,10 @@
-### June 26, 2018 -- Challenge 1
+### June 26, 2018 -- Challenges to Tutorials
+
+- Changed all naming of challenges to tutorial
+- Updated package.json with build watch and serve hosting
+
+
+### June 26, 2018 -- Initial Challenges
 
 - Finished challenge files for 1, 2, and 3
 - Added webpack to build each challenge

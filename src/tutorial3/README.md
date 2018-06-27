@@ -1,6 +1,6 @@
-# Challenge 3: Passing Props
+# tutorial 3: Passing Props
 
-Building off challenge 2, we will now look at how you can<br/>
+Building off tutorial 2, we will now look at how you can<br/>
 customize you component's props and how to pass data between<br/>
 windows.
 
@@ -71,5 +71,5 @@ document.addEventListener('click', () => {
 ```
 
 Now when we click in the client component, we see a black box appear.<br/>
-The next challenge will focus on using all that you have learned.
+The next tutorial will focus on using all that you have learned.
 

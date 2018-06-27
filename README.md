@@ -24,11 +24,11 @@ npm install
 
 Go into the `src` folder and go through each folder sequentailly. When in each folder, read the `README`
 <br/>
-for instruction to each challenge.
+for instruction to each tutorial.
 
 ## Testing
 
-Built into this repo is a testing suite that will allow you to go through each challenge with ease.
+Built into this repo is a testing suite that will allow you to go through each tutorial with ease.
 <br/>
 
 *coming soon...*

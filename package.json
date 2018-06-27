@@ -4,9 +4,9 @@
   "description": "A lesson on Zoid and its uses",
   "main": "index.js",
   "scripts": {
-    "b:1": "webpack --mode development --env.CHALLENGE=challenge1  && serve ./src/challenge1 -p 3000",
-    "b:2": "webpack --mode development --env.CHALLENGE=challenge2  && serve ./src/challenge2 -p 3000",
-    "b:3": "webpack --mode development --env.CHALLENGE=challenge3  && serve ./src/challenge3 -p 3000",
+    "b:1": "concurrently --kill-others \"webpack -w --mode development --env.TUTORIAL=tutorial1\" \"serve ./src/tutorial1 -p 3000\"",
+    "b:2": "concurrently --kill-others \"webpack -w --mode development --env.TUTORIAL=tutorial2\" \"serve ./src/tutorial2 -p 3000\"",
+    "b:3": "concurrently --kill-others \"webpack -w --mode development --env.TUTORIAL=tutorial3\" \"serve ./src/tutorial3 -p 3000\"",
     "test": "yarn test"
   },
   "repository": {
@@ -29,10 +29,13 @@
   },
   "homepage": "https://github.com/joshgreenwell/zoid-lesson#readme",
   "dependencies": {
+    "zoid": "^6.0.63"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0",
     "path": "^0.12.7",
     "serve": "^9.1.0",
     "webpack": "^4.12.1",
-    "webpack-cli": "^3.0.8",
-    "zoid": "^6.0.63"
+    "webpack-cli": "^3.0.8"
   }
 }
