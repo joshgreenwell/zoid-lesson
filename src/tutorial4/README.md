@@ -4,11 +4,16 @@ Now that you have the basics, and some of the advanced features<br/>
 of zoid, we will put your skills to the test in creating an end<br/>
 to end demo of how you could use zoid in a production codebase.
 
-When you look at something like PayPal Checkout, you may notice two things. One, the button is never affected by css from the parent website. Two, There is a popup that has the checkout experience. This is done by using double layered zoid components. Let's create a version of this for login.
+When you look at something like PayPal Checkout, you may notice two<br/>
+things. One, the button is never affected by css from the parent website.<br/>
+Two, There is a popup that has the checkout experience. This is done by<br/>
+using double layered zoid components. Let's create a version of this<br/>
+for login.
 
 ### Step 1:
 
-Create a simple button component using what we learned in turotials one through three.
+Create a simple button component using what we learned in turotials<br/>
+one through three.
 
 *Example Coming Soon...*
 
