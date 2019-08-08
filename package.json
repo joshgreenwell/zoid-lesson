@@ -7,6 +7,8 @@
     "b:1": "concurrently --kill-others \"webpack -w --mode development --env.TUTORIAL=tutorial1\" \"serve ./src/tutorial1 -p 3000\"",
     "b:2": "concurrently --kill-others \"webpack -w --mode development --env.TUTORIAL=tutorial2\" \"serve ./src/tutorial2 -p 3000\"",
     "b:3": "concurrently --kill-others \"webpack -w --mode development --env.TUTORIAL=tutorial3\" \"serve ./src/tutorial3 -p 3000\"",
+    "present:build": "webpack -w --mode development --env.TUTORIAL=presentation",
+    "present:start": "serve ./src/presentation -p 3000",
     "test": "jest --watch"
   },
   "repository": {
@@ -29,7 +31,8 @@
   },
   "homepage": "https://github.com/joshgreenwell/zoid-lesson#readme",
   "dependencies": {
-    "zoid": "^6.0.63"
+    "jsx-pragmatic": "^2.0.7",
+    "zoid": "^9.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
