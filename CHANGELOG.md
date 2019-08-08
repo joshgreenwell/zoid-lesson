@@ -1,3 +1,9 @@
+### August 8, 2019 -- Updating Dependencies
+
+- Upgrade Zoid to v9
+- Add .npmrc for registry
+- Add presentation folder and files
+
 ### June 26, 2018 -- Challenges to Tutorials
 
 - Changed all naming of challenges to tutorial
