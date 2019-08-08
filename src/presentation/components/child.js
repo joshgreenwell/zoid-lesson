@@ -8,9 +8,9 @@ const zoidComponentInit = zoid.create({
 
 // --------------------------------------------------
 // Passing Options
-const element = document.querySelector('#title')
-element.innerHTML = window.xprops.alternateText
+// const element = document.querySelector('#title')
+// element.innerHTML = window.xprops.alternateText
 
-document.addEventListener('click', () => {
-  window.xprops.updateBackgroundColor('card', 'pink')
-}, false)
+// document.addEventListener('click', () => {
+//   window.xprops.updateBackgroundColor('card', 'pink')
+// }, false)
