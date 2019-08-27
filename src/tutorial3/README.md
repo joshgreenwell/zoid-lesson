@@ -13,7 +13,7 @@ In `parent.js` we have an options object that is being passed<br />
 into our render function. Let's populate that with some values.
 
 **Note:** render is only called from the parent, therefore, our<br/>
-props will only evvery be passed to the child. We will cover more<br/>
+props will only every be passed to the child. We will cover more<br/>
 on that later.
 
 ```javascript
