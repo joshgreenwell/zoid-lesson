@@ -7,14 +7,14 @@ windows.
 ### Step 1:
 
 Props are added as the first parameter by the first call to the<br />
-returned zoid component object of the `Component(props).render`function.<br/>
+returned zoid component object of the [`Component(props).render`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#componentpropsrendercontainer-context)function.<br/>
 We won't use props validation in this portion until `step 4`.
 
 In `parent.js` we have an options object that is being passed<br />
 into our render function. Let's populate that with some values.
 
 **Note:** render is only called from the parent, therefore, our<br/>
-props will only every be passed to the child. We will cover more<br/>
+[`props`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#props-object) will only every be passed to the child. We will cover more<br/>
 on that later.
 
 ```javascript
@@ -23,7 +23,7 @@ const options = {
 }
 ```
 
-It's as simple as that! Now you are passing `props` whenever you render.
+It's as simple as that! Now you are passing [`props`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#props-object) whenever you render.
 
 ### Step 2:
 

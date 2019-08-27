@@ -5,7 +5,7 @@ customize your component's shape and style with the `create` call
 
 `Create` should only ever be called once per a page, per tag!<br/>
 if you try to call create again in the `parent.js` it will<br />
-throw an error. `Render`, however, can be called any number<br/>
+throw an error. [`Render`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#componentpropsrendercontainer-context), however, can be called any number<br/>
 of times.
 
 ### Step 1:
