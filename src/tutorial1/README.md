@@ -44,7 +44,7 @@ This will go in `parent.js`.
 const element = 'zoid-component'
 const options = {}
 
-helloWorld.render(options, element)
+helloWorld(options).render(element)
 ```
 
 Calling `zoid.create` returns a zoid component object, which has the<br/>

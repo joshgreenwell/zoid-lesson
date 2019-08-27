@@ -9,4 +9,4 @@ const helloWorld = zoid.create({
   url: `${config.baseUrl}/child.html`
 })
 
-helloWorld.render(options, element)
+helloWorld(options).render(element)
