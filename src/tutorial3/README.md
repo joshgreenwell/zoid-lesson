@@ -6,7 +6,8 @@ windows.
 
 ### Step 1:
 
-Props are added as the first parameter of the `render` function.<br/>
+Props are added as the first parameter by the first call to the<br />
+returned zoid component object of the `Component(props).render`function.<br/>
 We won't use props validation in this portion until `step 4`.
 
 In `parent.js` we have an options object that is being passed<br />
@@ -22,7 +23,7 @@ const options = {
 }
 ```
 
-It's as simple as that! Now you are passing props whenever you render.
+It's as simple as that! Now you are passing `props` whenever you render.
 
 ### Step 2:
 
