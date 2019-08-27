@@ -41,7 +41,7 @@ all passed data here.
 
 ### Step 3:
 
-So, now you masy be wondering, if zoid only passes data one way,<br/>
+So, now you may be wondering, if zoid only passes data one way,<br/>
 how do you do two way messaging? The asnwer is callbacks.
 
 Just like above we will add a key to our options object, but this<br/>
@@ -62,7 +62,7 @@ dom tree, not the childs. This way we can do almost anything to the<br/>
 parent page from within the child, assuming there is a function passed<br/>
 from the parent.
 
-To use this function, we refrence the xpropx in the `client.js`.
+To use this function, we refrence the `xprops` in the `client.js`.
 
 ```javascript
 document.addEventListener('click', () => {
