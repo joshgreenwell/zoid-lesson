@@ -48,8 +48,8 @@ const helloWorld = zoid.create({
     width: '600px',
     height: '400px'
   },
-  prerenderTemplate() {
-    const html = document.createElement('html')
+  prerenderTemplate({ doc }) {
+    const html = doc.createElement('html')
     html.innerHTML = '<body>Pre-render</body>'
     return html
   }
@@ -77,8 +77,8 @@ const helloWorld = zoid.create({
     width: '600px',
     height: '400px'
   },
-  prerenderTemplate() {
-    const html = document.createElement('html')
+  prerenderTemplate({ doc }) {
+    const html = doc.createElement('html')
     html.innerHTML = '<body>Pre-render</body>'
     return html
   },
