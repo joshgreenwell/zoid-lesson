@@ -1,7 +1,7 @@
 import zoid from 'zoid'
 import { config } from '../../config'
 
-const element = 'zoid-component'
+const element = '#zoid-component'
 const options = {}
 
 const helloWorld = zoid.create({

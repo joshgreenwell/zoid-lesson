@@ -41,7 +41,7 @@ This will go in `parent.js`.
 
 ```javascript
 // Element can be either an string id or a dom element
-const element = 'zoid-component'
+const element = '#zoid-component'
 const options = {}
 
 helloWorld(options).render(element)
