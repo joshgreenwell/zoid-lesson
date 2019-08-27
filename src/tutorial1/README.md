@@ -34,7 +34,7 @@ see a `console.log`.
 ### Step 3:
 
 We have created the zoid component, but we haven't rendered it yet.<br/>
-The `parent.html` has a div with the id of `zoid-component`. We will<br/>
+The `parent.html` has a div with the id of `#zoid-component`. We will<br/>
 use that as a place to render our child.
 
 This will go in `parent.js`.
@@ -47,10 +47,11 @@ const options = {}
 helloWorld(options).render(element)
 ```
 
-Calling `zoid.create` returns a zoid component object, which has the<br/>
-`render` function in it.
+Calling `zoid.create` returns a zoid component object, which has to be<br/>
+initialised with `props` first by calling it, this returns another object<br />
+with a `render` function in it.
 
-Now when you go the you refresh the webpage, you should see a spinner.<br/>
+Now when you go to refresh the webpage, you should see a spinner.<br/>
 This will spin endlessly because it can't make a connection to the child.<br/>
 
 Zoid requires a two way connection, a component on the parent and a<br/>
