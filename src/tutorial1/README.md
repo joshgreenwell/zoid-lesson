@@ -28,7 +28,7 @@ Now we can run our yarn command to build and serve the files.
 yarn run b:1
 ```
 
-Now you can go to `http://lcoalhost:3000/parent.html` and you should<br/>
+Now you can go to `http://localhost:3000/parent.html` and you should<br/>
 see a `console.log`.
 
 ### Step 3:
