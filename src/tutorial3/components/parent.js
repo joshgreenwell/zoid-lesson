@@ -1,7 +1,7 @@
 import zoid from 'zoid'
 import { config } from '../../config'
 
-const element = 'zoid-component'
+const element = '#zoid-component'
 const options = {}
 
 const helloWorld = zoid.create({
@@ -9,4 +9,4 @@ const helloWorld = zoid.create({
   url: `${config.baseUrl}/child.html`
 })
 
-helloWorld.render(options, element)
+helloWorld(options).render(element)

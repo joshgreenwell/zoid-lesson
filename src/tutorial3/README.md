@@ -6,14 +6,15 @@ windows.
 
 ### Step 1:
 
-Props are added as the first parameter of the `render` function.<br/>
+Props are added as the first parameter by the first call to the<br />
+returned zoid component object of the [`Component(props).render`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#componentpropsrendercontainer-context)function.<br/>
 We won't use props validation in this portion until `step 4`.
 
 In `parent.js` we have an options object that is being passed<br />
 into our render function. Let's populate that with some values.
 
 **Note:** render is only called from the parent, therefore, our<br/>
-props will only evvery be passed to the child. We will cover more<br/>
+[`props`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#props-object) will only every be passed to the child. We will cover more<br/>
 on that later.
 
 ```javascript
@@ -22,7 +23,7 @@ const options = {
 }
 ```
 
-It's as simple as that! Now you are passing props whenever you render.
+It's as simple as that! Now you are passing [`props`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#props-object) whenever you render.
 
 ### Step 2:
 
@@ -41,7 +42,7 @@ all passed data here.
 
 ### Step 3:
 
-So, now you masy be wondering, if zoid only passes data one way,<br/>
+So, now you may be wondering, if zoid only passes data one way,<br/>
 how do you do two way messaging? The asnwer is callbacks.
 
 Just like above we will add a key to our options object, but this<br/>
@@ -62,7 +63,7 @@ dom tree, not the childs. This way we can do almost anything to the<br/>
 parent page from within the child, assuming there is a function passed<br/>
 from the parent.
 
-To use this function, we refrence the xpropx in the `client.js`.
+To use this function, we refrence the `xprops` in the `client.js`.
 
 ```javascript
 document.addEventListener('click', () => {

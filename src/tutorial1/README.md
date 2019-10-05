@@ -8,7 +8,7 @@ If you open `parent.html`, you will notice it is just a div element.<br/>
 This is where we will render the `child.html`.<br/>
 
 Let's create a zoid component in `parent.js`. To do this we need<br/>
-to call `zoid.create`.
+to call [`zoid.create`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#zoidcreate-options-).
 
 ```javascript
 const helloWorld = zoid.create({
@@ -17,7 +17,7 @@ const helloWorld = zoid.create({
 })
 ```
 
-The child component you are trying to load is always the `url`, in<br/>
+The child component you are trying to load is always the [`url`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#url-string---props---string-required), in<br/>
 this case the `child.html` is being loaded *into* the `parent.html`.
 
 ### Step 2:
@@ -34,23 +34,24 @@ see a `console.log`.
 ### Step 3:
 
 We have created the zoid component, but we haven't rendered it yet.<br/>
-The `parent.html` has a div with the id of `zoid-component`. We will<br/>
+The `parent.html` has a div with the id of [`#zoid-component`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#container-string--htmlelement). We will<br/>
 use that as a place to render our child.
 
 This will go in `parent.js`.
 
 ```javascript
 // Element can be either an string id or a dom element
-const element = 'zoid-component'
+const element = '#zoid-component'
 const options = {}
 
-helloWorld.render(options, element)
+helloWorld(options).render(element)
 ```
 
-Calling `zoid.create` returns a zoid component object, which has the<br/>
-`render` function in it.
+Calling [`zoid.create`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#zoidcreate-options-) returns a zoid component object, which has to be<br/>
+initialised with [`props`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#props-object) first by calling it, this returns another object<br />
+with a [`render`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#componentpropsrendercontainer-context) function in it.
 
-Now when you go the you refresh the webpage, you should see a spinner.<br/>
+Now when you go to refresh the webpage, you should see a spinner.<br/>
 This will spin endlessly because it can't make a connection to the child.<br/>
 
 Zoid requires a two way connection, a component on the parent and a<br/>
@@ -72,5 +73,5 @@ const helloWorld = zoid.create({
 })
 ```
 
-The key thing to note here is that the `tag` and `url` are **exactly**<br/>
+The key thing to note here is that the [`tag`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#tag-string-required) and [`url`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#url-string---props---string-required) are **exactly**<br/>
 the same in both the parent and child components.

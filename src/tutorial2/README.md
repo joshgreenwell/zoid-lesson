@@ -1,16 +1,16 @@
 # Tutorial 2: Customizing the Create
 
 Building off tutorial 1, we will now look at how you can<br/>
-customize you component shape and style with the `create` call
+customize your component's shape and style with the `create` call
 
 `Create` should only ever be called once per a page, per tag!<br/>
 if you try to call create again in the `parent.js` it will<br />
-throw an error. `Render`, however, can we called any number<br/>
+throw an error. [`Render`](https://github.com/krakenjs/zoid/blob/master/docs/api.md#componentpropsrendercontainer-context), however, can be called any number<br/>
 of times.
 
 ### Step 1:
 
-First, let's look at the changing the size of the child on the<br/>
+First, let's look at changing the size of the child on the<br/>
 parent page. To do this we can use the `dimensions` key.
 
 If you build the tutorial now, `yarn run b:2`, you will see<br/>
@@ -30,7 +30,7 @@ const helloWorld = zoid.create({
 ```
 
 Adding the dimensions key to the create, we are able to change<br/>
-the size of the zoid component. Only px and % strings are supported.
+the size of the zoid component. Only `px` and `%` strings are supported.
 
 ### Step 2:
 
@@ -48,8 +48,8 @@ const helloWorld = zoid.create({
     width: '600px',
     height: '400px'
   },
-  prerenderTemplate() {
-    const html = document.createElement('html')
+  prerenderTemplate({ doc }) {
+    const html = doc.createElement('html')
     html.innerHTML = '<body>Pre-render</body>'
     return html
   }
@@ -67,7 +67,7 @@ Now, we will look at types of zoid components, the obvious two are<br/>
 `iframe` and `popup`. By default, zoid renders the child component<br/>
 as an iframe. Let's change it to a popup.
 
-In zoid, these are called `contexts` and can be implemented like below.
+In zoid, these are called **contexts** and can be implemented like below.
 
 ```javascript
 const helloWorld = zoid.create({
@@ -77,14 +77,12 @@ const helloWorld = zoid.create({
     width: '600px',
     height: '400px'
   },
-  prerenderTemplate() {
-    const html = document.createElement('html')
+  prerenderTemplate({ doc }) {
+    const html = doc.createElement('html')
     html.innerHTML = '<body>Pre-render</body>'
     return html
   },
-  contexts: {
-    popup: true
-  }
+  defaultContext: 'popup'
 })
 ```
 
