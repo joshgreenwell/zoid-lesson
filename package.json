@@ -41,7 +41,7 @@
     "jest": "^23.2.0",
     "path": "^0.12.7",
     "regenerator-runtime": "^0.12.0",
-    "serve": "^9.1.0",
+    "serve": "^10.1.2",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8"
   }
